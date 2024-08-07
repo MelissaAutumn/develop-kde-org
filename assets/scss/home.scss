@@ -1,3 +1,6 @@
+@import "hugo-kde.scss";
+@import "includes/variables";
+
 .bottomAlignRow div {
   position: relative;
   padding-bottom: 50px;
@@ -204,7 +207,7 @@ main h3 {
   }
 }
 
-@media(prefers-color-scheme:dark) {
+@include color-mode(dark) {
   .tool,
   .block-nav {
     background-color: #31363b;

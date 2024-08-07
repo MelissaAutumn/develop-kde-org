@@ -1,0 +1,77 @@
+/**
+ * SPDX-FileCopyrightText: 2022 Phu Hung Nguyen <phu@kde.org>
+ * SPDX-FileCopyrightText: (c) 2019 Carl Schwan <carl@carlschwan.eu>
+ * SPDX-FileCopyrightText: (c) 2017 Ken Vermette <vermette@gmail.com>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
+@use "hugo:vars" as h;
+
+@import "includes/variables";
+@import "includes/variables-dark";
+
+// global import
+@import "bootstrap/bootstrap";
+
+// local import
+@import "includes/root";
+@import "includes/buttons";
+@import "includes/carousel";
+@import "includes/header";
+@import "includes/core";
+@import "includes/cookie";
+@import 'includes/typography';
+@import 'includes/navbar';
+@import 'includes/base';
+@import 'includes/footer';
+@import 'includes/kpatrons';
+@import 'includes/glyphs';
+@import 'includes/social';
+@import 'includes/code';
+@import 'includes/breadcrumb';
+@import 'includes/list';
+@import 'includes/page';
+
+// utilities
+@import 'components/card';
+@import 'components/laptop';
+@import 'components/store-badge';
+@import 'components/notecard';
+
+/*
+main {
+  font-size: 17px;
+}
+@media (min-width: 600px) {
+  main {
+    font-size: 19px
+  }
+}
+@media (min-width: 900px) {
+  main {
+    font-size: 22px
+  }
+}
+*/
+.shadow {
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+.input-group.shadow {
+  box-shadow: inset 0 2px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+
+a.shadow {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+a.shadow:hover {
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) !important;
+  border: 0 solid rgba(0, 0, 0, 0.1);
+}
+
