@@ -35,11 +35,9 @@
   &__input:disabled {
     cursor: wait;
   }
-
   ::placeholder {
     color: var(--text-muted);
   }
-
 }
 
 .popover.offline-search-result {

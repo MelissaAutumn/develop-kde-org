@@ -64,7 +64,7 @@ module:
   imports:
     - path: invent.kde.org/websites/hugo-kde
 params:
-  colorModeType: data #media-query
+  colorModeType: media-query
   algolia_docsearch: false
   archived_version: false
   copyright: The KDE Community

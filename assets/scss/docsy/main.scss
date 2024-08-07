@@ -7,6 +7,24 @@
  */
 @import "../hugo-kde.scss";
 
+// Import from hugo-kde theme
+@import "../bootstrap";
+
+main {
+  font-size: 1rem;
+}
+@media (min-width: 600px) {
+  main {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  main {
+    font-size: 1rem;
+  }
+}
+
+
 @import "support/functions";
 @import "variables_project";
 @import "variables";
@@ -36,17 +54,27 @@
   --bs-border-color: #eff0f1;
 }
 
-
 @include color-mode(dark, true) {
   --bs-body-color: #eff0f1;
   --bs-body-bg: #232629;
   --bs-border-color: #16181b;
+}
 
+@include color-mode(dark) {
   h1, h2, h3, h4, h5, h6 {
     color: #bdc3c7 !important;
   }
 }
 
+.alert-error {
+  --bs-alert-color: var(--bs-danger-text);
+  --bs-alert-bg: var(--bs-danger-bg-subtle);
+  --bs-alert-border-color: var(--bs-danger-border-subtle);
+  --bs-alert-link-color: var(--bs-danger-text);
+  color: var(--bs-alert-color);
+  background-color: var(--bs-alert-bg);
+  border-color: var(--bs-alert-border-color);
+}
 
 
 footer {

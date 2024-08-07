@@ -19,6 +19,7 @@ window.addEventListener('load', async () => {
         return;
     }
 
+    // Start disabled
     searchInput.setAttribute('disabled', 'true');
 
     let popover = null;
@@ -61,24 +62,24 @@ window.addEventListener('load', async () => {
 
           lunrWorker.postMessage({'evt': 'init', 'data': data});
         } catch {
-            lunrIdx = lunr(function () {
-                this.ref('ref');
-                this.field('title', { boost: 2 });
-                this.field('body');
+          lunrIdx = lunr(function () {
+              this.ref('ref');
+              this.field('title', { boost: 2 });
+              this.field('body');
 
-                data.forEach((doc) => {
-                    this.add(doc);
+              data.forEach((doc) => {
+                  this.add(doc);
 
-                    resultDetails.set(doc.ref, {
-                        title: doc.title,
-                        excerpt: doc.excerpt,
-                    });
-                });
-            });
-
-            searchInput.removeAttribute('disabled');
-            searchInput.dispatchEvent(new SubmitEvent('change', {submitter: searchInput}));
+                  resultDetails.set(doc.ref, {
+                      title: doc.title,
+                      excerpt: doc.excerpt,
+                  });
+              });
+          });
+          searchInput.removeAttribute('disabled');
+          searchInput.dispatchEvent(new SubmitEvent('change', {submitter: searchInput}));
         }
+
     }
 
     const render = async (element) => {

@@ -1,3 +1,7 @@
+.ae-card h4, .ae-card .h1 {
+  margin-top: 0;
+}
+
 @include color-mode(dark) {
     // Adjust the cards to match the Bootstrap 4 appearance
     .ae-card {

@@ -16,7 +16,9 @@
 
   .highlight {
     @extend .card;
-    
+
+    background-color: var(--highlight-background);
+
     margin: 2rem 0;
 
     pre, div {
@@ -71,8 +73,8 @@
 
 // Adjust the highlight color in chroma syntax blocks
 // TODO: Move this to hugo-kde
-.chroma .hl {
-  background-color: var(--chroma-highlight) !important;
+.chroma {
+  color: inherit !important;
 }
 
 // Force the last column of a chroma block (the code) to fill the rest of the width

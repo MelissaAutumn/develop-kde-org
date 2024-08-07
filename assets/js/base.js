@@ -15,9 +15,8 @@ limitations under the License.
 */
 
 window.addEventListener('load', () => {
-   document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((element) => element.tooltip());
-   document.querySelectorAll('[data-bs-toggle="popover"]').forEach((element) => element.popover());
-   document.querySelectorAll('.popover-dismiss').forEach((element) => element.popover({trigger: 'focus'}));
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((element) => element.tooltip());
+    document.querySelectorAll('.popover-dismiss').forEach((element) => element.popover({trigger: 'focus'}));
 });
 
 function getOffsetSum(elem) {

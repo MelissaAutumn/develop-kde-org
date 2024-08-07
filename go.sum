@@ -5,3 +5,5 @@ invent.kde.org/websites/hugo-bootstrap v0.0.0-20230310220713-2c58a2e72e20 h1:Gj7
 invent.kde.org/websites/hugo-bootstrap v0.0.0-20230310220713-2c58a2e72e20/go.mod h1:ShMW6etO0smOfDUNu1CyVW2WPwGVNZPzmzpzC40w674=
 invent.kde.org/websites/hugo-kde v0.0.0-20240722015037-37d922aa2b90 h1:rrosMvmDQaasGu6uKbv+XY/yGVEUVZXu6SqKdkdjWzQ=
 invent.kde.org/websites/hugo-kde v0.0.0-20240722015037-37d922aa2b90/go.mod h1:YfwgFZaRVlsOVucPueDz7ygXrKx5vIMjO5/NjkssHpw=
+invent.kde.org/websites/hugo-kde v0.0.0-20240822015634-caa8e2fba260 h1:XLm3Cb0/GSA6+Cn9FHBX51vgjeBN+JjGoSlJV9hiN6A=
+invent.kde.org/websites/hugo-kde v0.0.0-20240822015634-caa8e2fba260/go.mod h1:YfwgFZaRVlsOVucPueDz7ygXrKx5vIMjO5/NjkssHpw=
