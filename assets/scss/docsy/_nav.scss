@@ -101,3 +101,9 @@
 .navbar {
   background-image: none;
 }
+
+.dropdown-menu[data-bs-popper].dropdown-trans {
+  left: auto;
+  right: 0;
+}
+
